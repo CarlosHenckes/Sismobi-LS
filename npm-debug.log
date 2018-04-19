@@ -1,0 +1,15 @@
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: This socket is closed.
+    at Socket._write (net.js:637:19)
+    at doWrite (_stream_writable.js:225:10)
+    at writeOrBuffer (_stream_writable.js:215:5)
+    at Socket.Writable.write (_stream_writable.js:182:11)
+    at Socket.write (net.js:615:40)
+    at Socket.stream.write (C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Web Tools\External\npm\node_modules\ansi\lib\newlines.js:36:21)
+    at Cursor.write (C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Web Tools\External\npm\node_modules\ansi\lib\ansi.js:157:23)
+    at EventEmitter.log.write (C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Web Tools\External\npm\node_modules\npmlog\log.js:124:15)
+    at EventEmitter.<anonymous> (C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Web Tools\External\npm\node_modules\npmlog\log.js:100:12)
+    at Array.forEach (native)
