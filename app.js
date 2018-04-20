@@ -7,7 +7,7 @@ var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/home');
-var porta = process.env.PORT;
+var porta = process.env.PORT || 3000;
 var app = express();
 
 // view engine setup
@@ -25,4 +25,4 @@ app.use(express.static(path.join(__dirname, 'public')));
 load('models') .then('controllers') .then('routes') .into(app);
 
 
-app.listen(porta, function () {     console.log("Aplicação no ar."); });
+app.listen(porta, function () {     console.log("Aplicação no ar em " + porta); });
